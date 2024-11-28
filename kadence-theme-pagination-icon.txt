@@ -1,0 +1,8 @@
+//Update Kadence Pagination Arrow Icon
+add_filter( 'kadence_pagination_args', function($args) {
+	$args['arrow-left'] = '<span class="screen-reader-text">' . __( 'Previous Page', 'kadence' ) . '</span>' . '<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg)"> <path d="M1.91 0L0.5 1.41L5.08 6L0.5 10.59L1.91 12L7.91 6L1.91 0Z" fill="black"/> </svg>';
+
+	$args['arrow-right'] = '<span class="screen-reader-text">' . __( 'Next Page', 'kadence' ) . '</span>' . '<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.91 0L0.5 1.41L5.08 6L0.5 10.59L1.91 12L7.91 6L1.91 0Z" fill="black"/> </svg>';
+
+	return $args;
+}, 10, 1 );
