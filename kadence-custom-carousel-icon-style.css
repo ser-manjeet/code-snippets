@@ -1,0 +1,37 @@
+.kt-blocks-carousel .splide__arrow svg {
+      display: none;
+  }
+.kt-blocks-carousel .splide__arrow {
+    top: calc(100% + 60px);
+}
+.kt-blocks-carousel .splide__arrow.splide__arrow--prev {
+    left: calc(50% - 46px);
+}
+.kt-blocks-carousel .splide__arrow.splide__arrow--next {
+    right: calc(50% - 46px);
+}
+  .kt-blocks-carousel .splide__arrow {
+      opacity: 1;
+      --splide-nav-background: var(--global-palette1);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+  .kt-blocks-carousel .splide__arrow:before {
+    content: "";
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMyAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyLjEwNzEgNy4yOTI4OUMyMi40OTc2IDcuNjgzNDIgMjIuNDk3NiA4LjMxNjU4IDIyLjEwNzEgOC43MDcxMUwxNS43NDMxIDE1LjA3MTFDMTUuMzUyNiAxNS40NjE2IDE0LjcxOTQgMTUuNDYxNiAxNC4zMjg5IDE1LjA3MTFDMTMuOTM4NCAxNC42ODA1IDEzLjkzODQgMTQuMDQ3NCAxNC4zMjg5IDEzLjY1NjlMMTkuOTg1OCA4TDE0LjMyODkgMi4zNDMxNUMxMy45Mzg0IDEuOTUyNjIgMTMuOTM4NCAxLjMxOTQ2IDE0LjMyODkgMC45Mjg5MzJDMTQuNzE5NCAwLjUzODQwOCAxNS4zNTI2IDAuNTM4NDA4IDE1Ljc0MzEgMC45Mjg5MzJMMjIuMTA3MSA3LjI5Mjg5Wk0wLjU5OTk3NiA3TDIxLjQgN1Y5TDAuNTk5OTc2IDlMMC41OTk5NzYgN1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+    background-color: #fff;
+      line-height: 0;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      transition: background-color 0.3s ease;
+      content: "";
+      width: 23px;
+      height: 16px;
+  }
+  .kt-blocks-carousel .splide__arrow.splide__arrow--prev:before {
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMyAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuODkyODg3IDcuMjkyODlDMC41MDIzNjMgNy42ODM0MiAwLjUwMjM2MyA4LjMxNjU4IDAuODkyODg3IDguNzA3MTFMNy4yNTY4NSAxNS4wNzExQzcuNjQ3MzcgMTUuNDYxNiA4LjI4MDU0IDE1LjQ2MTYgOC42NzEwNiAxNS4wNzExQzkuMDYxNTkgMTQuNjgwNSA5LjA2MTU5IDE0LjA0NzQgOC42NzEwNiAxMy42NTY5TDMuMDE0MjEgOEw4LjY3MTA2IDIuMzQzMTVDOS4wNjE1OSAxLjk1MjYyIDkuMDYxNTkgMS4zMTk0NiA4LjY3MTA2IDAuOTI4OTMyQzguMjgwNTQgMC41Mzg0MDggNy42NDczNyAwLjUzODQwOCA3LjI1Njg1IDAuOTI4OTMyTDAuODkyODg3IDcuMjkyODlaTTIyLjQgN0wxLjU5OTk5IDdWOUwyMi40IDlWN1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+  }
+.wp-block-kadence-testimonials .kt-blocks-carousel .kt-blocks-carousel-init {
+    padding-inline: 0 !important;
+}
