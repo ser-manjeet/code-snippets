@@ -37,24 +37,24 @@
         if (!slideSections.length) return;
 
         slideSections.forEach(slideSec => {
-            const splideInstance = slideSec.querySelector('.splide')?._splide;
-
-            if (splideInstance) {
-                // Splide is already initialized
+            // Check if Splide arrows already exist
+            const arrowsExist = slideSec.querySelector('.splide__arrows');
+            if (arrowsExist) {
                 attachCustomButtons(slideSec);
-            } else {
-                // Splide is not yet initialized – use MutationObserver to wait
-                const observer = new MutationObserver(() => {
-                    const arrowsExist = slideSec.querySelector('.splide__arrows');
-                    if (arrowsExist) {
-                        observer.disconnect(); // Stop observing once arrows appear
-                        attachCustomButtons(slideSec);
-                    }
-                });
-
-                // Start observing the slider container for DOM changes
-                observer.observe(slideSec, { childList: true, subtree: true });
+                return;
             }
+
+            // Splide is not yet initialized – use MutationObserver to wait
+            const observer = new MutationObserver(() => {
+                const arrowsExistNow = slideSec.querySelector('.splide__arrows');
+                if (arrowsExistNow) {
+                    observer.disconnect(); // Stop observing once arrows appear
+                    attachCustomButtons(slideSec);
+                }
+            });
+
+            // Start observing the slider container for DOM changes
+            observer.observe(slideSec, { childList: true, subtree: true });
         });
     }
 
