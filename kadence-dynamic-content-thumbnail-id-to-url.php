@@ -1,3 +1,4 @@
+<?php
 /**
  * Kadence: Convert WooCommerce Product Category Thumbnail ID to Image URL
  *
