@@ -33,6 +33,10 @@ function hrt_override_kadence_query_block_with_related_products( $pre_render, $b
 		$product_id  = get_the_ID();
 		$related_ids = wc_get_related_products( $product_id, 3 );
 
+		if( empty( $related_ids ) ) {
+            return $pre_render;
+        }
+
 		$args = array(
 			'post_type' => 'product',
 			'post__in'  => $related_ids,
